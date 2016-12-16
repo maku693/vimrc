@@ -42,9 +42,10 @@ set incsearch
 set ignorecase
 set smartcase
 
-" Backup/Swap
+" Backup/Swap/Undo files
 set nobackup
 set noswapfile
+set noundofile
 
 " Completion
 set omnifunc=syntaxcomplete#Complete
