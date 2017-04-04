@@ -1,7 +1,7 @@
 set cmdheight=1
 set columns=100
 set guicursor+=a:blinkwait500-blinkoff500-blinkon500
-set guioptions=ac
+set guioptions=c
 set lines=36
 set linespace=1
 
