@@ -2,6 +2,7 @@
 set autoread
 set nocompatible
 set ttyfast
+set lazyredraw
 
 " Editing
 set autoindent
