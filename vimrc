@@ -53,6 +53,7 @@ set omnifunc=syntaxcomplete#Complete
 " Plugins
 call plug#begin('~/.vim/plugged')
 Plug 'maku693/vim-usual'
+Plug 'justinmk/vim-dirvish'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'othree/html5.vim', { 'for': 'html' }
 Plug 'hail2u/vim-css3-syntax', { 'for': ['html', 'css'] }
@@ -67,16 +68,19 @@ set cino=:0g0N-sE-s
 let g:cpp_class_scope_highlight=1
 syntax on
 
-" Language specific settings overrides
+" autocmds
 augroup vimrc
+  " Language specific settings overrides
   autocmd!
   autocmd FileType c setlocal shiftwidth=4 tabstop=4
   autocmd FileType cpp setlocal shiftwidth=4 tabstop=4
   autocmd FileType make setlocal noexpandtab
-augroup END
 
-" Netrw
-let g:netrw_banner=0
+  " vim-dirvish: Map t to "open in new tab"
+  autocmd FileType dirvish
+        \  nnoremap <silent><buffer> t :call dirvish#open('tabedit', 0)<CR>
+        \ |xnoremap <silent><buffer> t :call dirvish#open('tabedit', 0)<CR>
+augroup END
 
 " Keymaps
 " Don't use Ex mode, use Q for formatting
