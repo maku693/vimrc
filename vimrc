@@ -67,9 +67,12 @@ let g:cpp_class_scope_highlight=1
 syntax on
 
 " Language specific settings overrides
-autocmd FileType c setlocal shiftwidth=4 tabstop=4
-autocmd FileType cpp setlocal shiftwidth=4 tabstop=4
-autocmd FileType make setlocal noexpandtab
+augroup vimrc
+  autocmd!
+  autocmd FileType c setlocal shiftwidth=4 tabstop=4
+  autocmd FileType cpp setlocal shiftwidth=4 tabstop=4
+  autocmd FileType make setlocal noexpandtab
+augroup END
 
 " Netrw
 let g:netrw_banner=0
