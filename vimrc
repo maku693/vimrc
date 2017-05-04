@@ -64,7 +64,7 @@ call plug#end()
 
 " Colorscheme
 colorscheme usual
-set cino=:0g0N-sE-s
+set cinoptions=:0g0N-sE-s
 let g:cpp_class_scope_highlight=1
 syntax on
 
