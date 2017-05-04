@@ -12,9 +12,6 @@ set expandtab
 set shiftwidth=2
 set smarttab
 set tabstop=2
-" Remember last position
-au BufWinLeave ?* mkview
-au BufWinEnter ?* silent loadview
 
 " UI
 set ambiwidth=double
@@ -75,6 +72,11 @@ augroup vimrc
   autocmd FileType c setlocal shiftwidth=4 tabstop=4
   autocmd FileType cpp setlocal shiftwidth=4 tabstop=4
   autocmd FileType make setlocal noexpandtab
+
+  " Remember last position
+  autocmd BufWinLeave ?* mkview
+  autocmd BufWinEnter ?* silent loadview
+
 
   " vim-dirvish: Map t to "open in new tab"
   autocmd FileType dirvish
