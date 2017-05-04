@@ -6,6 +6,7 @@ set lazyredraw
 " Editing
 set autoindent
 set backspace=indent,eol,start
+set cinoptions=:0g0N-sE-s(sw1Wsm1j1
 set encoding=utf-8
 set expandtab
 set shiftwidth=2
@@ -64,7 +65,6 @@ call plug#end()
 
 " Colorscheme
 colorscheme usual
-set cinoptions=:0g0N-sE-s
 let g:cpp_class_scope_highlight=1
 syntax on
 
