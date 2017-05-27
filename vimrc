@@ -32,7 +32,8 @@ set wildmenu
 " Status line
 set laststatus=2
 set statusline=%<%f\ %m%r%h%w
-set statusline+=%=\ %l/%L\ [%{&fenc!=''?&fenc:&enc}][%{&ff}]
+set statusline+=%=%l:%c
+set statusline+=\ [%{&fenc!=''?&fenc:&enc}][%{&ff}]
 
 " Search
 set hlsearch
