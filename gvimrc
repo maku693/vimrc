@@ -7,8 +7,8 @@ set linespace=1
 
 if has('win32')
   set guioptions+=mr
-  set guifont=Consolas:h10
-  set guifontwide=MeiryoKe_Console:h10
+  set guifont=Ricty_Diminished:h12
+  set rop=type:directx,geom:1,renmode:5
 elseif has('mac')
   set guifont=Menlo:h12
 endif
