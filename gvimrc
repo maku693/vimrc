@@ -6,7 +6,7 @@ set lines=36
 set linespace=1
 
 if has('win32')
-  set guioptions+=mr
+  set guioptions+=r
   set guifont=Ricty_Diminished:h12
   set rop=type:directx,geom:1,renmode:5
 elseif has('mac')
