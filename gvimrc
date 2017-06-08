@@ -1,9 +1,10 @@
 set cmdheight=1
-set columns=80
+set columns=84 " 80 + numberwidth
 set guicursor+=a:blinkwait500-blinkoff500-blinkon500
 set guioptions=c
 set lines=36
 set linespace=1
+set number
 
 if has('win32')
   set guioptions+=r

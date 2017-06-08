@@ -21,8 +21,6 @@ set hidden
 set langnoremap
 set laststatus=2
 set mouse=a
-set number
-set ruler
 set scrolloff=5
 set sidescrolloff=5
 set showcmd
