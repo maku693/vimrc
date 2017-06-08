@@ -1,5 +1,5 @@
 set cmdheight=1
-set columns=84 " 80 + numberwidth
+set columns=85 " numberwidth + padding + 80
 set guicursor+=a:blinkwait500-blinkoff500-blinkon500
 set guioptions=c
 set lines=36
