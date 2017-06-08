@@ -96,3 +96,12 @@ noremap <silent> k gk
 noremap <silent> 0 g0
 noremap <silent> ^ g^
 noremap <silent> $ g$
+" Window navigation
+nnoremap <silent> s <Nop>
+nnoremap <silent> ss :<C-u>split<CR>
+nnoremap <silent> sv :<C-u>vsplit<CR>
+nnoremap <silent> sh <C-w>h
+nnoremap <silent> sj <C-w>j
+nnoremap <silent> sk <C-w>k
+nnoremap <silent> sl <C-w>l
+nnoremap <silent> s= <C-w>=
