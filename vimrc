@@ -70,6 +70,7 @@ augroup vimrc
   autocmd!
   autocmd FileType c setlocal shiftwidth=4 tabstop=4
   autocmd FileType cpp setlocal shiftwidth=4 tabstop=4
+  autocmd FileType go setlocal noexpandtab shiftwidth=4 tabstop=4  
   autocmd FileType make setlocal noexpandtab
 
   " Remember last position
