@@ -57,6 +57,7 @@ Plug 'hail2u/vim-css3-syntax', { 'for': ['html', 'css'] }
 Plug 'othree/yajs.vim', { 'for': ['html', 'javascript'] }
 Plug 'elzr/vim-json', { 'for': 'json' }
 Plug 'octol/vim-cpp-enhanced-highlight', { 'for': 'cpp' }
+Plug 'tikhomirov/vim-glsl'
 call plug#end()
 
 " Colorscheme
