@@ -8,7 +8,8 @@ set number
 
 if has('win32')
   set guioptions+=r
-  set guifont=Ricty_Diminished:h12
+  set guifont=InputMonoNarrow:h10
+  set guifontwide=MeiryoKe_Console:h10
   set rop=type:directx,geom:1,renmode:5
 elseif has('mac')
   set guifont=Menlo:h12
