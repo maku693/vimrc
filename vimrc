@@ -60,8 +60,9 @@ Plug 'octol/vim-cpp-enhanced-highlight', { 'for': 'cpp' }
 Plug 'tikhomirov/vim-glsl'
 call plug#end()
 
-" Colorscheme
+" Syntax
 colorscheme usual
+let g:vim_json_syntax_conceal=0 
 let g:cpp_class_scope_highlight=1
 syntax on
 
