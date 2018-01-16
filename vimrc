@@ -76,9 +76,8 @@ augroup vimrc
   autocmd FileType make setlocal noexpandtab
 
   " Remember last position
-  autocmd BufWinLeave ?* mkview
-  autocmd BufWinEnter ?* silent loadview
-
+  autocmd BufWinLeave ?* if &modifiable | mkview | endif
+  autocmd BufWinEnter ?* if &modifiable | loadview | endif
 
   " vim-dirvish: Map t to "open in new tab"
   autocmd FileType dirvish
