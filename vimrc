@@ -9,6 +9,8 @@ set backspace=indent,eol,start
 set cinoptions=:0g0N-sE-s(sw1Wsm1j1
 set encoding=utf-8
 set expandtab
+set iminsert=0
+set imsearch=-1
 set shiftwidth=2
 set smarttab
 set tabstop=2
