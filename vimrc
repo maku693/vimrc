@@ -106,3 +106,8 @@ nnoremap <silent> sj <C-w>j
 nnoremap <silent> sk <C-w>k
 nnoremap <silent> sl <C-w>l
 nnoremap <silent> s= <C-w>=
+
+" Platform specific settings
+if has('win32')
+  set viewdir=$HOME/vimfiles/view
+endif
