@@ -13,8 +13,6 @@ if has('win32')
   set renderoptions=type:directx,gamma:2.2,contrast:1.0,geom:1,level:1.0,renmode:5,taamode:0
 elseif has('mac')
   set guifont=Menlo:h12
-else
-  set guifont=M+\ 1mn\ 12
 endif
 
 colorscheme usual
