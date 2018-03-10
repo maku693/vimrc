@@ -83,7 +83,8 @@ augroup vimrc
 
   " vim-dirvish: Map t to "open in new tab"
   autocmd FileType dirvish
-        \nnoremap <buffer><silent> t :call dirvish#open('tabedit', 0)<CR>
+        \  nnoremap <silent><buffer> t :call dirvish#open('tabedit', 0)<CR>
+        \ |xnoremap <silent><buffer> t :call dirvish#open('tabedit', 0)<CR>
 augroup END
 
 " Keymaps
