@@ -6,7 +6,7 @@ set lazyredraw
 " Editing
 set autoindent
 set backspace=indent,eol,start
-set cinoptions=:0g0N-sE-s(sw1Wsm1j1
+set cinoptions=:0g0N-sE-s(0
 set encoding=utf-8
 set expandtab
 set iminsert=0
