@@ -2,7 +2,7 @@ set cmdheight=1
 set columns=85 " numberwidth + padding + 80
 set guicursor+=a:blinkwait500-blinkoff500-blinkon500
 set guioptions=c
-set lines=24
+set lines=36
 set linespace=1
 set number
 
