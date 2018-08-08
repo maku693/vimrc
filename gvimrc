@@ -14,5 +14,3 @@ if has('win32')
 elseif has('mac')
   set guifont=Menlo:h12
 endif
-
-colorscheme usual
