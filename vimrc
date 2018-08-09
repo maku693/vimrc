@@ -70,26 +70,22 @@ syntax on
 
 " autocmds
 augroup vimrc
-  " Language specific settings overrides
   autocmd!
+
+  " FileType specific settings
   autocmd FileType go setlocal noexpandtab
   autocmd FileType make setlocal noexpandtab
 
   " Remember last position
   autocmd BufWinLeave ?* if &modifiable | mkview | endif
   autocmd BufWinEnter ?* if &modifiable | loadview | endif
-
-  " vim-dirvish: Map t to "open in new tab"
-  autocmd FileType dirvish
-        \  nnoremap <silent><buffer> t :call dirvish#open('tabedit', 0)<CR>
-        \ |xnoremap <silent><buffer> t :call dirvish#open('tabedit', 0)<CR>
 augroup END
 
 " Keymaps
-" Don't use Ex mode, use Q for formatting
-map Q gq 
+" Use ex mode with completions
+noremap <silent> Q gQ
 " Clear highlights
-nnoremap <CR> :<C-u>noh<CR><CR>
+nnoremap <silent> <CR> :<C-u>noh<CR><CR>
 " Move around wraped lines
 noremap <silent> j gj
 noremap <silent> k gk
@@ -105,6 +101,7 @@ nnoremap <silent> sj <C-w>j
 nnoremap <silent> sk <C-w>k
 nnoremap <silent> sl <C-w>l
 nnoremap <silent> s= <C-w>=
+tnoremap <silent> sN <C-w>N
 
 " Platform specific settings
 if has('win32')
