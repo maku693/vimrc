@@ -85,7 +85,7 @@ augroup END
 " Use ex mode with completions
 noremap <silent> Q gQ
 " Clear highlights
-nnoremap <silent> <CR> :<C-u>noh<CR><CR>
+nnoremap <silent> <CR> :<C-U>noh<CR><CR>
 " Move around wraped lines
 noremap <silent> j gj
 noremap <silent> k gk
@@ -94,14 +94,14 @@ noremap <silent> ^ g^
 noremap <silent> $ g$
 " Window navigation
 nnoremap <silent> s <Nop>
-nnoremap <silent> ss :<C-u>split<CR>
-nnoremap <silent> sv :<C-u>vsplit<CR>
-nnoremap <silent> sh <C-w>h
-nnoremap <silent> sj <C-w>j
-nnoremap <silent> sk <C-w>k
-nnoremap <silent> sl <C-w>l
-nnoremap <silent> s= <C-w>=
-tnoremap <silent> sN <C-w>N
+nnoremap <silent> ss :<C-U>split<CR>
+nnoremap <silent> sv :<C-U>vsplit<CR>
+nnoremap <silent> sh <C-W>h
+nnoremap <silent> sj <C-W>j
+nnoremap <silent> sk <C-W>k
+nnoremap <silent> sl <C-W>l
+nnoremap <silent> s= <C-W>=
+tnoremap <silent> sN <C-W>N
 
 " Platform specific settings
 if has('win32')
