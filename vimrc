@@ -65,10 +65,16 @@ Plug 'junegunn/fzf.vim'
 Plug 'mileszs/ack.vim'
 call plug#end()
 
+" Plugin options
+let g:vim_json_syntax_conceal = 0
+let g:cpp_class_scope_highlight = 1
+if executable("rg")
+  let $FZF_DEFAULT_COMMAND = 'rg --files'
+  let g:ackprg = 'rg --vimgrep'
+endif
+
 " Syntax
 colorscheme usual
-let g:vim_json_syntax_conceal=0 
-let g:cpp_class_scope_highlight=1
 syntax on
 
 " autocmds
