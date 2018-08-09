@@ -60,6 +60,9 @@ Plug 'othree/yajs.vim', { 'for': ['html', 'javascript'] }
 Plug 'elzr/vim-json', { 'for': 'json' }
 Plug 'octol/vim-cpp-enhanced-highlight', { 'for': 'cpp' }
 Plug 'tikhomirov/vim-glsl'
+Plug 'junegunn/fzf'
+Plug 'junegunn/fzf.vim'
+Plug 'mileszs/ack.vim'
 call plug#end()
 
 " Syntax
