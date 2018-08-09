@@ -102,11 +102,11 @@ noremap <silent> 0 g0
 noremap <silent> ^ g^
 noremap <silent> $ g$
 " Buffer navigation
-nnoremap <silent> <C-j> :bnext<CR>
-nnoremap <silent> <C-k> :bprevious<CR>
+nnoremap <silent> <C-K> :bnext<CR>
+nnoremap <silent> <C-L> :bprevious<CR>
 " QuickFix entry navigation
-nnoremap <silent> <C-;> :cnext<CR>
-nnoremap <silent> <C-'> :cprevious<CR>
+nnoremap <silent> ]q :cnext<CR>
+nnoremap <silent> [q :cprevious<CR>
 " Window navigation
 nnoremap <silent> s <Nop>
 nnoremap <silent> ss :<C-U>split<CR>
@@ -116,12 +116,12 @@ nnoremap <silent> sj <C-W>j
 nnoremap <silent> sk <C-W>k
 nnoremap <silent> sl <C-W>l
 nnoremap <silent> s= <C-W>=
+nnoremap <silent> so <C-W>o
 tnoremap <silent> <C-W><ESC> <C-W>N
 " fzf.vim
-nnoremap <silent> <Space>b :Buffers<CR>
-nnoremap <silent> <Space>f :Files<CR>
+nnoremap <silent> <C-P> :Buffers<CR>
 " Ack.vim
-nnoremap <Space>a :Ack! <Space>
+nnoremap <Space>a :Ack!<Space>
       
 " Platform specific settings
 if has('win32')
