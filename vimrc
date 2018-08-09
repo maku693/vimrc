@@ -18,6 +18,7 @@ set tabstop=2
 " UI
 set ambiwidth=double
 set clipboard=unnamed
+set diffopt=filler,vertical
 set foldcolumn=1
 set hidden
 set langnoremap
@@ -63,6 +64,7 @@ Plug 'tikhomirov/vim-glsl'
 Plug 'junegunn/fzf'
 Plug 'junegunn/fzf.vim'
 Plug 'mileszs/ack.vim'
+Plug 'tpope/vim-fugitive'
 call plug#end()
 
 " Plugin options
@@ -122,6 +124,8 @@ tnoremap <silent> <C-W><ESC> <C-W>N
 nnoremap <silent> <C-P> :Buffers<CR>
 " Ack.vim
 nnoremap <Space>a :Ack!<Space>
+" fugitive.vim
+nnoremap <silent> <Space>g :Gstatus<CR>
       
 " Platform specific settings
 if has('win32')
