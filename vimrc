@@ -61,10 +61,6 @@ Plug 'othree/yajs.vim', { 'for': ['html', 'javascript'] }
 Plug 'elzr/vim-json', { 'for': 'json' }
 Plug 'octol/vim-cpp-enhanced-highlight', { 'for': 'cpp' }
 Plug 'tikhomirov/vim-glsl'
-Plug 'junegunn/fzf'
-Plug 'junegunn/fzf.vim'
-Plug 'mileszs/ack.vim'
-Plug 'tpope/vim-fugitive'
 call plug#end()
 
 " Plugin options
@@ -120,13 +116,7 @@ nnoremap <silent> sl <C-W>l
 nnoremap <silent> s= <C-W>=
 nnoremap <silent> so <C-W>o
 tnoremap <silent> <C-W><ESC> <C-W>N
-" fzf.vim
-nnoremap <silent> <C-P> :Buffers<CR>
-" Ack.vim
-nnoremap <Space>a :Ack!<Space>
-" fugitive.vim
-nnoremap <silent> <Space>g :Gstatus<CR>
-      
+
 " Platform specific settings
 if has('win32')
   set viewdir=$HOME/vimfiles/view
