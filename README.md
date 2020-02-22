@@ -1,3 +1,3 @@
 # vimrc
 
-Vim config files. Run `link.sh` or `link.bat` to install.
+Vim config files. Run `install.sh` or `install.bat` to install.
